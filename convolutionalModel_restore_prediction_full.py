@@ -225,7 +225,7 @@ def model_predict(data_test, y_label, learning_rate = 0.009, num_epochs = 100, m
     # Iniciar la sesión 
     with tf.Session() as sess: #
         
-        saver.restore(sess, "C:\\Users\\itmfr\\Desktop\\COV\\Nueva carpeta\\RedesConvolucionales_Clase1_empty\\red_conHArold\\convolution.ckpt")        
+        saver.restore(sess, "CAMBIAR_UBICACION_convolution.ckpt")        
         print("Model restored.")        
                
         predict_op = tf.nn.softmax(Z6)  # Apply softmax to logits
